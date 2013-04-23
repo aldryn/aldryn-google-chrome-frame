@@ -1,0 +1,13 @@
+name: Google Chrome Frame
+package-name: aldryn-google-chrome-frame
+url: https://github.com/aldryn/aldryn-google-chrome-frame
+author:
+  name: Divio AG
+  url: https://www.divio.ch
+installed-apps:
+  - aldryn_google_chrome_frame
+version: 0.0.4
+description: Enable site rendering via Google Chrome Frame in IE 9 and below
+license:
+  name: BSD
+  text: !literal-include LICENSE.txt
