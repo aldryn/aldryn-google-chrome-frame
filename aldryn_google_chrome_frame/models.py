@@ -2,7 +2,7 @@
 from cmscloud.template_api import registry
 from django.conf import settings
 
-META_TAG = '<meta http-equiv="X-UA-Compatible" content="chrome=1">'
+META_TAG = '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">'
 
 registry.add_to_head(META_TAG)
 
