@@ -7,7 +7,7 @@ author:
 installed-apps:
   - aldryn_google_chrome_frame
 version: 0.0.4
-description: When installed enables site rendering via Google Chrome Frame in IE 9 and below.
+description: Tags the site for rendering via Google Chrome Frame on IE 9 and below if available.
 license:
   name: BSD
   text: !literal-include LICENSE.txt
