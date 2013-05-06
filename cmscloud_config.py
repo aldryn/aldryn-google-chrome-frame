@@ -6,7 +6,7 @@ class Form(forms.BaseForm):
 
     CHOICES = [(x, 'IE%d' % (x,)) for x in range(9, 5, -1)]
 
-    max_version = forms.SelectFields(u'Max IE version for Chrome rendering', choices=CHOICES)
+    max_version = forms.SelectField(u'Max IE version for Chrome rendering', choices=CHOICES)
     installation_prompt = forms.CheckboxField(u'Display installation prompt')
 
     def to_settings(self, data, settings):
