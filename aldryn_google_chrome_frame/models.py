@@ -4,6 +4,7 @@ from django.conf import settings
 
 
 def get_meta_version(max_version):
+    max_version = int(max_version)
     assert 6 <= max_version <= 9
     if max_version == 9:
         return '1'
@@ -14,7 +15,7 @@ META_TAG = '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=%(meta_ve
 
 registry.add_to_head(META_TAG % {'meta_version': get_meta_version(settings.GOOGLE_CHROME_FRAME_MAX_VERSION)})
 
-PROMPT_SCRIPT = """<!--[if lte IE %(max_version)d ]>
+PROMPT_SCRIPT = """<!--[if lte IE %(max_version)s ]>
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
     <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
 <![endif]-->"""

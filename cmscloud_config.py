@@ -10,6 +10,6 @@ class Form(forms.BaseForm):
     installation_prompt = forms.CheckboxField(u'Display installation prompt', required=False)
 
     def to_settings(self, data, settings):
-        settings['GOOGLE_CHROME_FRAME_PROMPT'] = data['max_version']
-        settings['GOOGLE_CHROME_FRAME_MAX_VERSION'] = data['installation_prompt']
+        settings['GOOGLE_CHROME_FRAME_MAX_VERSION'] = data['max_version']
+        settings['GOOGLE_CHROME_FRAME_PROMPT'] = data['installation_prompt']
         return settings
